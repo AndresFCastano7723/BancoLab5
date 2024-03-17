@@ -73,7 +73,7 @@ public class Banco {
 		ArchivoPlano.almacenar("clientes.csv", lineasClientes);
 		ArrayList<String> lineasCuentas = new ArrayList<String>();
 		for(Cuenta cuenta : this.cuentas) {
-			lineasCuentas.add(cuenta.getNumero() + ";" + cuenta.getSaldo() + ";" + cuenta.getTipo() + "\n");
+			lineasCuentas.add(cuenta.getNumero() + ";" + cuenta.getSaldo() + ";" + cuenta.getTipo() + ";" + cuenta.getCliente() + "\n");
 		}
 		ArchivoPlano.almacenar("cuentas.csv", lineasCuentas);
 
